@@ -1,4 +1,10 @@
 amazingcomic
+
+main contributors list
+songtzu(谢松),etc...
+
+
+referenced docs list.
 ============
 http://faculty.cs.tamu.edu/schaefer/research/mls.pdf
 
