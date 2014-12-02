@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5B1B1E8C-3927-4F45-8F63-D4DBB9B8ADB6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>abcservice</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\OpenCV2.1\include\opencv;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\OpenCV2.1\lib;$(LibraryPath)</LibraryPath>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;HAVE_CONFIG_H;STDC_HEADERS;REGEX_MALLOC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\OpenCV2.1\include\opencv;regex;gsl;gsl\gsl;image;jpeg;mat;rowley;stasm;tasm;png;png\zlib;png\pnglib;winapps\wasm;warper;oileffect</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Nafxcwd.lib;Libcmtd.lib;gdiplus.lib;odbc32.lib;odbccp32.lib;gsl\lib_ms\mini_gslML.lib;gsl\lib_ms\gslcblasML.lib;jpeg\lib_ms\libjpeg.lib;C:\OpenCV2.1\lib\cv210.lib;C:\OpenCV2.1\lib\cxcore210.lib;C:\OpenCV2.1\lib\highgui210.lib;setargv.obj;binmode.obj;comctl32.lib;vfw32.lib;png\pnglib\libpng.lib;png\zlib\zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>Nafxcwd.lib;Libcmtd.lib;LIBCD;LIBC;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="data\model-1.asm" />
+    <None Include="data\model-2.asm" />
+    <None Include="data\mu-68-1d.asm" />
+    <None Include="data\mu-76-2d.asm" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gsl\gsl\acconfig.h" />
+    <ClInclude Include="gsl\gsl\config.h" />
+    <ClInclude Include="gsl\gsl\gsl_blas.h" />
+    <ClInclude Include="gsl\gsl\gsl_blas_types.h" />
+    <ClInclude Include="gsl\gsl\gsl_block.h" />
+    <ClInclude Include="gsl\gsl\gsl_block_char.h" />
+    <ClInclude Include="gsl\gsl\gsl_block_complex.h" />
+    <ClInclude Include="gsl\gsl\gsl_block_complex_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_block_complex_float.h" />
+    <ClInclude Include="gsl\gsl\gsl_block_complex_long_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_block_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_block_float.h" />
+    <ClInclude Include="gsl\gsl\gsl_block_int.h" />
+    <ClInclude Include="gsl\gsl\gsl_block_long.h" />
+    <ClInclude Include="gsl\gsl\gsl_block_long_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_block_short.h" />
+    <ClInclude Include="gsl\gsl\gsl_block_uchar.h" />
+    <ClInclude Include="gsl\gsl\gsl_block_uint.h" />
+    <ClInclude Include="gsl\gsl\gsl_block_ulong.h" />
+    <ClInclude Include="gsl\gsl\gsl_block_ushort.h" />
+    <ClInclude Include="gsl\gsl\gsl_cblas.h" />
+    <ClInclude Include="gsl\gsl\gsl_cdf.h" />
+    <ClInclude Include="gsl\gsl\gsl_chebyshev.h" />
+    <ClInclude Include="gsl\gsl\gsl_check_range.h" />
+    <ClInclude Include="gsl\gsl\gsl_combination.h" />
+    <ClInclude Include="gsl\gsl\gsl_complex.h" />
+    <ClInclude Include="gsl\gsl\gsl_complex_math.h" />
+    <ClInclude Include="gsl\gsl\gsl_const.h" />
+    <ClInclude Include="gsl\gsl\gsl_const_cgsm.h" />
+    <ClInclude Include="gsl\gsl\gsl_const_mksa.h" />
+    <ClInclude Include="gsl\gsl\gsl_const_num.h" />
+    <ClInclude Include="gsl\gsl\gsl_dft_complex.h" />
+    <ClInclude Include="gsl\gsl\gsl_dft_complex_float.h" />
+    <ClInclude Include="gsl\gsl\gsl_dht.h" />
+    <ClInclude Include="gsl\gsl\gsl_diff.h" />
+    <ClInclude Include="gsl\gsl\gsl_eigen.h" />
+    <ClInclude Include="gsl\gsl\gsl_errno.h" />
+    <ClInclude Include="gsl\gsl\gsl_fft.h" />
+    <ClInclude Include="gsl\gsl\gsl_fft_complex.h" />
+    <ClInclude Include="gsl\gsl\gsl_fft_complex_float.h" />
+    <ClInclude Include="gsl\gsl\gsl_fft_halfcomplex.h" />
+    <ClInclude Include="gsl\gsl\gsl_fft_halfcomplex_float.h" />
+    <ClInclude Include="gsl\gsl\gsl_fft_real.h" />
+    <ClInclude Include="gsl\gsl\gsl_fft_real_float.h" />
+    <ClInclude Include="gsl\gsl\gsl_fit.h" />
+    <ClInclude Include="gsl\gsl\gsl_heapsort.h" />
+    <ClInclude Include="gsl\gsl\gsl_histogram.h" />
+    <ClInclude Include="gsl\gsl\gsl_histogram2d.h" />
+    <ClInclude Include="gsl\gsl\gsl_ieee_utils.h" />
+    <ClInclude Include="gsl\gsl\gsl_integration.h" />
+    <ClInclude Include="gsl\gsl\gsl_interp.h" />
+    <ClInclude Include="gsl\gsl\gsl_linalg.h" />
+    <ClInclude Include="gsl\gsl\gsl_machine.h" />
+    <ClInclude Include="gsl\gsl\gsl_math.h" />
+    <ClInclude Include="gsl\gsl\gsl_matrix.h" />
+    <ClInclude Include="gsl\gsl\gsl_matrix_char.h" />
+    <ClInclude Include="gsl\gsl\gsl_matrix_complex_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_matrix_complex_float.h" />
+    <ClInclude Include="gsl\gsl\gsl_matrix_complex_long_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_matrix_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_matrix_float.h" />
+    <ClInclude Include="gsl\gsl\gsl_matrix_int.h" />
+    <ClInclude Include="gsl\gsl\gsl_matrix_long.h" />
+    <ClInclude Include="gsl\gsl\gsl_matrix_long_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_matrix_short.h" />
+    <ClInclude Include="gsl\gsl\gsl_matrix_uchar.h" />
+    <ClInclude Include="gsl\gsl\gsl_matrix_uint.h" />
+    <ClInclude Include="gsl\gsl\gsl_matrix_ulong.h" />
+    <ClInclude Include="gsl\gsl\gsl_matrix_ushort.h" />
+    <ClInclude Include="gsl\gsl\gsl_message.h" />
+    <ClInclude Include="gsl\gsl\gsl_min.h" />
+    <ClInclude Include="gsl\gsl\gsl_mode.h" />
+    <ClInclude Include="gsl\gsl\gsl_monte.h" />
+    <ClInclude Include="gsl\gsl\gsl_monte_miser.h" />
+    <ClInclude Include="gsl\gsl\gsl_monte_plain.h" />
+    <ClInclude Include="gsl\gsl\gsl_monte_vegas.h" />
+    <ClInclude Include="gsl\gsl\gsl_multifit.h" />
+    <ClInclude Include="gsl\gsl\gsl_multifit_nlin.h" />
+    <ClInclude Include="gsl\gsl\gsl_multimin.h" />
+    <ClInclude Include="gsl\gsl\gsl_multiroots.h" />
+    <ClInclude Include="gsl\gsl\gsl_nan.h" />
+    <ClInclude Include="gsl\gsl\gsl_ntuple.h" />
+    <ClInclude Include="gsl\gsl\gsl_odeiv.h" />
+    <ClInclude Include="gsl\gsl\gsl_permutation.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_char.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_complex_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_complex_float.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_complex_long_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_float.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_int.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_long.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_long_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_short.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_uchar.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_uint.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_ulong.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_ushort.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_vector.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_char.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_complex_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_complex_float.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_complex_long_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_float.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_int.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_long.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_long_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_short.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_uchar.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_uint.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_ulong.h" />
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_ushort.h" />
+    <ClInclude Include="gsl\gsl\gsl_poly.h" />
+    <ClInclude Include="gsl\gsl\gsl_pow_int.h" />
+    <ClInclude Include="gsl\gsl\gsl_precision.h" />
+    <ClInclude Include="gsl\gsl\gsl_qrng.h" />
+    <ClInclude Include="gsl\gsl\gsl_randist.h" />
+    <ClInclude Include="gsl\gsl\gsl_rng.h" />
+    <ClInclude Include="gsl\gsl\gsl_roots.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_airy.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_bessel.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_clausen.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_coulomb.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_coupling.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_dawson.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_debye.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_dilog.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_elementary.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_ellint.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_elljac.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_erf.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_exp.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_expint.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_fermi_dirac.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_gamma.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_gegenbauer.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_hyperg.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_laguerre.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_lambert.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_legendre.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_log.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_pow_int.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_psi.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_result.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_synchrotron.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_transport.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_trig.h" />
+    <ClInclude Include="gsl\gsl\gsl_sf_zeta.h" />
+    <ClInclude Include="gsl\gsl\gsl_siman.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_char.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_float.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_int.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_long.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_long_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_short.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_uchar.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_uint.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_ulong.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_ushort.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_vector.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_char.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_float.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_int.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_long.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_long_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_short.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_uchar.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_uint.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_ulong.h" />
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_ushort.h" />
+    <ClInclude Include="gsl\gsl\gsl_specfunc.h" />
+    <ClInclude Include="gsl\gsl\gsl_spline.h" />
+    <ClInclude Include="gsl\gsl\gsl_statistics.h" />
+    <ClInclude Include="gsl\gsl\gsl_statistics_char.h" />
+    <ClInclude Include="gsl\gsl\gsl_statistics_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_statistics_float.h" />
+    <ClInclude Include="gsl\gsl\gsl_statistics_int.h" />
+    <ClInclude Include="gsl\gsl\gsl_statistics_long.h" />
+    <ClInclude Include="gsl\gsl\gsl_statistics_long_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_statistics_short.h" />
+    <ClInclude Include="gsl\gsl\gsl_statistics_uchar.h" />
+    <ClInclude Include="gsl\gsl\gsl_statistics_uint.h" />
+    <ClInclude Include="gsl\gsl\gsl_statistics_ulong.h" />
+    <ClInclude Include="gsl\gsl\gsl_statistics_ushort.h" />
+    <ClInclude Include="gsl\gsl\gsl_sum.h" />
+    <ClInclude Include="gsl\gsl\gsl_sys.h" />
+    <ClInclude Include="gsl\gsl\gsl_test.h" />
+    <ClInclude Include="gsl\gsl\gsl_types.h" />
+    <ClInclude Include="gsl\gsl\gsl_vector.h" />
+    <ClInclude Include="gsl\gsl\gsl_vector_char.h" />
+    <ClInclude Include="gsl\gsl\gsl_vector_complex.h" />
+    <ClInclude Include="gsl\gsl\gsl_vector_complex_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_vector_complex_float.h" />
+    <ClInclude Include="gsl\gsl\gsl_vector_complex_long_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_vector_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_vector_float.h" />
+    <ClInclude Include="gsl\gsl\gsl_vector_int.h" />
+    <ClInclude Include="gsl\gsl\gsl_vector_long.h" />
+    <ClInclude Include="gsl\gsl\gsl_vector_long_double.h" />
+    <ClInclude Include="gsl\gsl\gsl_vector_short.h" />
+    <ClInclude Include="gsl\gsl\gsl_vector_uchar.h" />
+    <ClInclude Include="gsl\gsl\gsl_vector_uint.h" />
+    <ClInclude Include="gsl\gsl\gsl_vector_ulong.h" />
+    <ClInclude Include="gsl\gsl\gsl_vector_ushort.h" />
+    <ClInclude Include="gsl\gsl\gsl_version.h" />
+    <ClInclude Include="gsl\gsl\tridiag.h" />
+    <ClInclude Include="gsl\gsl\view.h" />
+    <ClInclude Include="image\ezfont.h" />
+    <ClInclude Include="image\image.hpp" />
+    <ClInclude Include="image\imequalize.hpp" />
+    <ClInclude Include="image\imfile.hpp" />
+    <ClInclude Include="image\imgiven.hpp" />
+    <ClInclude Include="image\imutil.hpp" />
+    <ClInclude Include="image\imwrite.hpp" />
+    <ClInclude Include="image\jpegutil.hpp" />
+    <ClInclude Include="image\pngutil.hpp" />
+    <ClInclude Include="image\rgbimutil.hpp" />
+    <ClInclude Include="jpeg\cderror.h" />
+    <ClInclude Include="jpeg\cdjpeg.h" />
+    <ClInclude Include="jpeg\jconfig.h" />
+    <ClInclude Include="jpeg\jerror.h" />
+    <ClInclude Include="jpeg\jinclude.h" />
+    <ClInclude Include="jpeg\jmorecfg.h" />
+    <ClInclude Include="jpeg\jpeglib.h" />
+    <ClInclude Include="mat\mat.hpp" />
+    <ClInclude Include="mat\matvec.hpp" />
+    <ClInclude Include="mat\matview.hpp" />
+    <ClInclude Include="mat\mchol.hpp" />
+    <ClInclude Include="oileffect\oileffect.h" />
+    <ClInclude Include="png\pnglib\png.h" />
+    <ClInclude Include="png\pnglib\pngconf.h" />
+    <ClInclude Include="png\readpng.h" />
+    <ClInclude Include="png\zlib\zconf.h" />
+    <ClInclude Include="png\zlib\zlib.h" />
+    <ClInclude Include="regex\regex.h" />
+    <ClInclude Include="regex\regex_config.h" />
+    <ClInclude Include="rowley\find.hpp" />
+    <ClInclude Include="rowley\follow.hpp" />
+    <ClInclude Include="rowley\forward.hpp" />
+    <ClInclude Include="rowley\initnet.hpp" />
+    <ClInclude Include="rowley\list.hpp" />
+    <ClInclude Include="rowley\search.hpp" />
+    <ClInclude Include="rowley\tclhash.h" />
+    <ClInclude Include="stasm\asmsearch.hpp" />
+    <ClInclude Include="stasm\atface.hpp" />
+    <ClInclude Include="stasm\colors.hpp" />
+    <ClInclude Include="stasm\err.hpp" />
+    <ClInclude Include="stasm\imshape.hpp" />
+    <ClInclude Include="stasm\initasm.hpp" />
+    <ClInclude Include="stasm\landmarks.hpp" />
+    <ClInclude Include="stasm\me17s.hpp" />
+    <ClInclude Include="stasm\mouth.hpp" />
+    <ClInclude Include="stasm\prof.hpp" />
+    <ClInclude Include="stasm\readasm.hpp" />
+    <ClInclude Include="stasm\readconf.hpp" />
+    <ClInclude Include="stasm\release.hpp" />
+    <ClInclude Include="stasm\rowley.hpp" />
+    <ClInclude Include="stasm\rowleyhand.hpp" />
+    <ClInclude Include="stasm\safe_alloc.hpp" />
+    <ClInclude Include="stasm\shapefile.hpp" />
+    <ClInclude Include="stasm\shapemodel.hpp" />
+    <ClInclude Include="stasm\sparsemat.hpp" />
+    <ClInclude Include="stasm\startshape.hpp" />
+    <ClInclude Include="stasm\stasm.hpp" />
+    <ClInclude Include="stasm\stasm_cv.h" />
+    <ClInclude Include="stasm\stasm_dll.hpp" />
+    <ClInclude Include="stasm\tab.hpp" />
+    <ClInclude Include="stasm\util.hpp" />
+    <ClInclude Include="stasm\violajones.hpp" />
+    <ClInclude Include="stasm\vjhand.hpp" />
+    <ClInclude Include="stasm\winfile.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="tasm\detav.hpp" />
+    <ClInclude Include="tasm\eyesynth.hpp" />
+    <ClInclude Include="tasm\mrand.hpp" />
+    <ClInclude Include="tasm\proftrain.hpp" />
+    <ClInclude Include="tasm\tasm.hpp" />
+    <ClInclude Include="tasm\tasmshapes.hpp" />
+    <ClInclude Include="tasm\tcovar.hpp" />
+    <ClInclude Include="warper\GrowCanvas.h" />
+    <ClInclude Include="warper\ManagedWrapper.h" />
+    <ClInclude Include="warper\TranslateCanvas.h" />
+    <ClInclude Include="warper\Warper.h" />
+    <ClInclude Include="warper\WarperCanvas.h" />
+    <ClInclude Include="warper\WarperUtil.h" />
+    <ClInclude Include="winapps\casm\camera.hpp" />
+    <ClInclude Include="winapps\casm\casm.hpp" />
+    <ClInclude Include="winapps\iland\asmsearch1.hpp" />
+    <ClInclude Include="winapps\iland\iland.hpp" />
+    <ClInclude Include="winapps\marki\marki.hpp" />
+    <ClInclude Include="winapps\thatch\libthatch.hpp" />
+    <ClInclude Include="winapps\thatch\winthatch.hpp" />
+    <ClInclude Include="winapps\wasm\wasm.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="image\ezfont.c" />
+    <ClCompile Include="image\imequalize.cpp" />
+    <ClCompile Include="image\imfile.cpp" />
+    <ClCompile Include="image\imgiven.cpp" />
+    <ClCompile Include="image\imutil.cpp" />
+    <ClCompile Include="image\imwrite.cpp" />
+    <ClCompile Include="image\jpegutil.cpp" />
+    <ClCompile Include="image\pngutil.cpp" />
+    <ClCompile Include="image\rgbimutil.cpp" />
+    <ClCompile Include="jpeg\wrbmp.c" />
+    <ClCompile Include="mat\mat.cpp" />
+    <ClCompile Include="mat\matvec.cpp" />
+    <ClCompile Include="mat\mchol.cpp" />
+    <ClCompile Include="oileffect\oileffect.cpp" />
+    <ClCompile Include="opencv_example\stasm_opencv_example.cpp" />
+    <ClCompile Include="png\readpng.c" />
+    <ClCompile Include="regex\regex.c" />
+    <ClCompile Include="rowley\find.cpp" />
+    <ClCompile Include="rowley\follow.cpp" />
+    <ClCompile Include="rowley\forward.cpp" />
+    <ClCompile Include="rowley\initnet.cpp" />
+    <ClCompile Include="rowley\list.cpp" />
+    <ClCompile Include="rowley\search.cpp" />
+    <ClCompile Include="rowley\tclHash.c" />
+    <ClCompile Include="stasm\asmsearch.cpp" />
+    <ClCompile Include="stasm\atface.cpp" />
+    <ClCompile Include="stasm\hypot.c" />
+    <ClCompile Include="stasm\imshape.cpp" />
+    <ClCompile Include="stasm\initasm.cpp" />
+    <ClCompile Include="stasm\landmarks.cpp" />
+    <ClCompile Include="stasm\marki.cpp" />
+    <ClCompile Include="stasm\prof.cpp" />
+    <ClCompile Include="stasm\readasm.cpp" />
+    <ClCompile Include="stasm\readconf.cpp" />
+    <ClCompile Include="stasm\rowley.cpp" />
+    <ClCompile Include="stasm\rowleyhand.cpp" />
+    <ClCompile Include="stasm\safe_alloc.cpp" />
+    <ClCompile Include="stasm\shapefile.cpp" />
+    <ClCompile Include="stasm\shapemodel.cpp" />
+    <ClCompile Include="stasm\sparsemat.cpp" />
+    <ClCompile Include="stasm\startshape.cpp" />
+    <ClCompile Include="stasm\stasm.cpp" />
+    <ClCompile Include="stasm\stasm_dll.cpp" />
+    <ClCompile Include="stasm\tab.cpp" />
+    <ClCompile Include="stasm\util.cpp" />
+    <ClCompile Include="stasm\violajones.cpp" />
+    <ClCompile Include="stasm\vjhand.cpp" />
+    <ClCompile Include="stasm\werr.cpp" />
+    <ClCompile Include="stasm\winfile.cpp" />
+    <ClCompile Include="stasm\wrelease.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tasm\detav.cpp" />
+    <ClCompile Include="tasm\mrand.cpp" />
+    <ClCompile Include="tasm\tcovar.cpp" />
+    <ClCompile Include="warper\GrowCanvas.cpp" />
+    <ClCompile Include="warper\ManagedWrapper.cpp" />
+    <ClCompile Include="warper\TranslateCanvas.cpp" />
+    <ClCompile Include="warper\Warper.cpp" />
+    <ClCompile Include="warper\WarperCanvas.cpp" />
+    <ClCompile Include="warper\WarperUtil.cpp" />
+    <ClCompile Include="winapps\casm\camera.cpp" />
+    <ClCompile Include="winapps\casm\casm.cpp" />
+    <ClCompile Include="winapps\iland\asmsearch1.cpp" />
+    <ClCompile Include="winapps\thatch\libthatch.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

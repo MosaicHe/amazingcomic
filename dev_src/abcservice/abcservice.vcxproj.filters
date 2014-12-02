@@ -1,0 +1,1128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="data\model-1.asm">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="data\model-2.asm">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="data\mu-68-1d.asm">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="data\mu-76-2d.asm">
+      <Filter>源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\acconfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_blas.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_blas_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_block.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_block_char.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_block_complex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_block_complex_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_block_complex_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_block_complex_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_block_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_block_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_block_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_block_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_block_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_block_short.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_block_uchar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_block_uint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_block_ulong.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_block_ushort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_cblas.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_cdf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_chebyshev.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_check_range.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_combination.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_complex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_complex_math.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_const.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_const_cgsm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_const_mksa.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_const_num.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_dft_complex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_dft_complex_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_dht.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_diff.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_eigen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_errno.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_fft.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_fft_complex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_fft_complex_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_fft_halfcomplex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_fft_halfcomplex_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_fft_real.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_fft_real_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_fit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_heapsort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_histogram.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_histogram2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_ieee_utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_integration.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_interp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_linalg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_machine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_math.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_matrix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_matrix_char.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_matrix_complex_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_matrix_complex_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_matrix_complex_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_matrix_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_matrix_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_matrix_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_matrix_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_matrix_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_matrix_short.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_matrix_uchar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_matrix_uint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_matrix_ulong.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_matrix_ushort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_message.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_min.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_mode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_monte.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_monte_miser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_monte_plain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_monte_vegas.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_multifit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_multifit_nlin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_multimin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_multiroots.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_nan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_ntuple.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_odeiv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permutation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_char.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_complex_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_complex_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_complex_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_short.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_uchar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_uint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_ulong.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_ushort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_vector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_char.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_complex_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_complex_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_complex_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_short.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_uchar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_uint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_ulong.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_permute_vector_ushort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_poly.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_pow_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_precision.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_qrng.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_randist.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_rng.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_roots.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_airy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_bessel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_clausen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_coulomb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_coupling.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_dawson.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_debye.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_dilog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_elementary.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_ellint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_elljac.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_erf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_exp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_expint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_fermi_dirac.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_gamma.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_gegenbauer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_hyperg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_laguerre.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_lambert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_legendre.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_pow_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_psi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_result.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_synchrotron.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_transport.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_trig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sf_zeta.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_siman.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_char.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_short.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_uchar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_uint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_ulong.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_ushort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_vector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_char.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_short.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_uchar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_uint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_ulong.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sort_vector_ushort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_specfunc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_spline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_statistics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_statistics_char.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_statistics_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_statistics_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_statistics_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_statistics_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_statistics_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_statistics_short.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_statistics_uchar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_statistics_uint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_statistics_ulong.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_statistics_ushort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_sys.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_vector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_vector_char.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_vector_complex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_vector_complex_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_vector_complex_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_vector_complex_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_vector_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_vector_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_vector_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_vector_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_vector_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_vector_short.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_vector_uchar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_vector_uint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_vector_ulong.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_vector_ushort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\gsl_version.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\tridiag.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl\gsl\view.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg\cderror.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg\cdjpeg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg\jconfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg\jerror.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg\jinclude.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg\jmorecfg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg\jpeglib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mat\mat.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mat\matvec.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mat\matview.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mat\mchol.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="png\pnglib\png.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="png\pnglib\pngconf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="png\zlib\zconf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="png\zlib\zlib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="png\readpng.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="regex\regex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="regex\regex_config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rowley\find.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rowley\follow.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rowley\forward.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rowley\initnet.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rowley\list.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rowley\search.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rowley\tclhash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tasm\detav.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tasm\eyesynth.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tasm\mrand.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tasm\proftrain.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tasm\tasm.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tasm\tasmshapes.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tasm\tcovar.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\asmsearch.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\atface.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\colors.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\err.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\imshape.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\initasm.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\landmarks.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\me17s.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\mouth.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\prof.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\readasm.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\readconf.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\release.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\rowley.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\rowleyhand.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\safe_alloc.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\shapefile.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\shapemodel.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\sparsemat.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\startshape.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\stasm.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\stasm_cv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\stasm_dll.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\tab.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\util.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\violajones.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\vjhand.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stasm\winfile.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="winapps\casm\camera.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="winapps\casm\casm.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="winapps\iland\asmsearch1.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="winapps\iland\iland.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="winapps\marki\marki.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="winapps\thatch\libthatch.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="winapps\thatch\winthatch.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="winapps\wasm\wasm.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="warper\GrowCanvas.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="warper\ManagedWrapper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="warper\TranslateCanvas.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="warper\Warper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="warper\WarperCanvas.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="warper\WarperUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="image\ezfont.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="image\image.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="image\imequalize.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="image\imfile.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="image\imgiven.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="image\imutil.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="image\imwrite.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="image\jpegutil.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="image\pngutil.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="image\rgbimutil.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="oileffect\oileffect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jpeg\wrbmp.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mat\mat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mat\matvec.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mat\mchol.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="png\readpng.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="regex\regex.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rowley\find.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rowley\follow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rowley\forward.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rowley\initnet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rowley\list.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rowley\search.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rowley\tclHash.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tasm\detav.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tasm\mrand.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tasm\tcovar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\asmsearch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\atface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\hypot.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\imshape.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\initasm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\landmarks.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\marki.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\prof.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\readasm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\readconf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\rowley.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\rowleyhand.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\safe_alloc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\shapefile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\shapemodel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\sparsemat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\startshape.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\stasm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\stasm_dll.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\tab.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\util.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\violajones.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\vjhand.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\werr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\winfile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stasm\wrelease.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winapps\casm\camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winapps\casm\casm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winapps\iland\asmsearch1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winapps\thatch\libthatch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv_example\stasm_opencv_example.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="warper\GrowCanvas.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="warper\ManagedWrapper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="warper\TranslateCanvas.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="warper\Warper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="warper\WarperCanvas.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="warper\WarperUtil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="image\ezfont.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="image\imequalize.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="image\imfile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="image\imgiven.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="image\imutil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="image\imwrite.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="image\jpegutil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="image\pngutil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="image\rgbimutil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oileffect\oileffect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
